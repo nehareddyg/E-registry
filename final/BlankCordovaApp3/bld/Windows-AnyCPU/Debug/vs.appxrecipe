@@ -1,0 +1,449 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>NEHA</Machine>
+    <WindowsUser>Neha Reddy G</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <TargetOsVersion>6.3</TargetOsVersion>
+    <TargetOsDescription>Windows 8.1</TargetOsDescription>
+    <SolutionConfiguration>debug|anycpu</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>io.cordova.myappd2001f</PackageIdentityName>
+    <IntermediateOutputPath>H:\final\BlankCordovaApp3\platforms\windows\build\windows\bld\</IntermediateOutputPath>
+    <RegisteredManifestChecksum>1B83A6F781A36197AE0A84B6B9B25B2D625F4B64598AED7B8AA344CC2495BAC6</RegisteredManifestChecksum>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="H:\final\BlankCordovaApp3\platforms\windows\build\windows\debug\anycpu\win8.1\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2016-06-07T19:54:48.000</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="H:\final\BlankCordovaApp3\platforms\windows\images\cf.png">
+      <PackagePath>images\cf.png</PackagePath>
+      <Modified>2016-06-03T17:08:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="H:\final\BlankCordovaApp3\platforms\windows\images\doc.png">
+      <PackagePath>images\doc.png</PackagePath>
+      <Modified>2016-06-06T09:45:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="H:\final\BlankCordovaApp3\platforms\windows\images\fu.png">
+      <PackagePath>images\fu.png</PackagePath>
+      <Modified>2016-06-03T17:08:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="H:\final\BlankCordovaApp3\platforms\windows\images\pr.png">
+      <PackagePath>images\pr.png</PackagePath>
+      <Modified>2016-06-03T17:09:06.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="H:\final\BlankCordovaApp3\platforms\windows\images\SplashScreen.scale-100.png">
+      <PackagePath>images\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2016-06-07T19:54:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="H:\final\BlankCordovaApp3\platforms\windows\images\Square150x150Logo.scale-100.png">
+      <PackagePath>images\Square150x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2016-06-07T19:54:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="H:\final\BlankCordovaApp3\platforms\windows\images\Square30x30Logo.scale-100.png">
+      <PackagePath>images\Square30x30Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2016-06-07T19:54:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="H:\final\BlankCordovaApp3\platforms\windows\images\Square310x310Logo.scale-100.png">
+      <PackagePath>images\Square310x310Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2016-06-07T19:54:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="H:\final\BlankCordovaApp3\platforms\windows\images\Square44x44Logo.scale-100.png">
+      <PackagePath>images\Square44x44Logo.scale-100.png</PackagePath>
+      <Modified>2016-06-07T19:54:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="H:\final\BlankCordovaApp3\platforms\windows\images\Square70x70Logo.scale-100.png">
+      <PackagePath>images\Square70x70Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2016-06-07T19:54:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="H:\final\BlankCordovaApp3\platforms\windows\images\Square71x71Logo.scale-100.png">
+      <PackagePath>images\Square71x71Logo.scale-100.png</PackagePath>
+      <Modified>2016-06-07T19:54:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="H:\final\BlankCordovaApp3\platforms\windows\images\StoreLogo.scale-100.png">
+      <PackagePath>images\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2016-06-07T19:54:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="H:\final\BlankCordovaApp3\platforms\windows\images\Wide310x150Logo.scale-100.png">
+      <PackagePath>images\Wide310x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2016-06-07T19:54:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="H:\final\BlankCordovaApp3\platforms\windows\www\images\cf.png">
+      <PackagePath>www\images\cf.png</PackagePath>
+      <Modified>2016-06-07T19:54:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="H:\final\BlankCordovaApp3\platforms\windows\www\images\cordova.png">
+      <PackagePath>www\images\cordova.png</PackagePath>
+      <Modified>2016-06-07T19:54:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="H:\final\BlankCordovaApp3\platforms\windows\www\images\doc.png">
+      <PackagePath>www\images\doc.png</PackagePath>
+      <Modified>2016-06-07T19:54:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="H:\final\BlankCordovaApp3\platforms\windows\www\images\fu.png">
+      <PackagePath>www\images\fu.png</PackagePath>
+      <Modified>2016-06-07T19:54:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="H:\final\BlankCordovaApp3\platforms\windows\www\images\home.png">
+      <PackagePath>www\images\home.png</PackagePath>
+      <Modified>2016-06-07T19:54:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="H:\final\BlankCordovaApp3\platforms\windows\www\images\pr.png">
+      <PackagePath>www\images\pr.png</PackagePath>
+      <Modified>2016-06-07T19:54:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="H:\final\BlankCordovaApp3\platforms\windows\www\images\ui-bg_diagonals-thick_18_b81900_40x40.png">
+      <PackagePath>www\images\ui-bg_diagonals-thick_18_b81900_40x40.png</PackagePath>
+      <Modified>2016-06-07T19:54:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="H:\final\BlankCordovaApp3\platforms\windows\www\images\ui-bg_diagonals-thick_20_666666_40x40.png">
+      <PackagePath>www\images\ui-bg_diagonals-thick_20_666666_40x40.png</PackagePath>
+      <Modified>2016-06-07T19:54:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="H:\final\BlankCordovaApp3\platforms\windows\www\images\ui-bg_flat_10_000000_40x100.png">
+      <PackagePath>www\images\ui-bg_flat_10_000000_40x100.png</PackagePath>
+      <Modified>2016-06-07T19:54:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="H:\final\BlankCordovaApp3\platforms\windows\www\images\ui-bg_glass_100_f6f6f6_1x400.png">
+      <PackagePath>www\images\ui-bg_glass_100_f6f6f6_1x400.png</PackagePath>
+      <Modified>2016-06-07T19:54:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="H:\final\BlankCordovaApp3\platforms\windows\www\images\ui-bg_glass_100_fdf5ce_1x400.png">
+      <PackagePath>www\images\ui-bg_glass_100_fdf5ce_1x400.png</PackagePath>
+      <Modified>2016-06-07T19:54:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="H:\final\BlankCordovaApp3\platforms\windows\www\images\ui-bg_glass_65_ffffff_1x400.png">
+      <PackagePath>www\images\ui-bg_glass_65_ffffff_1x400.png</PackagePath>
+      <Modified>2016-06-07T19:54:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="H:\final\BlankCordovaApp3\platforms\windows\www\images\ui-bg_gloss-wave_35_f6a828_500x100.png">
+      <PackagePath>www\images\ui-bg_gloss-wave_35_f6a828_500x100.png</PackagePath>
+      <Modified>2016-06-07T19:54:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="H:\final\BlankCordovaApp3\platforms\windows\www\images\ui-bg_highlight-soft_100_eeeeee_1x100.png">
+      <PackagePath>www\images\ui-bg_highlight-soft_100_eeeeee_1x100.png</PackagePath>
+      <Modified>2016-06-07T19:54:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="H:\final\BlankCordovaApp3\platforms\windows\www\images\ui-bg_highlight-soft_75_ffe45c_1x100.png">
+      <PackagePath>www\images\ui-bg_highlight-soft_75_ffe45c_1x100.png</PackagePath>
+      <Modified>2016-06-07T19:54:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="H:\final\BlankCordovaApp3\platforms\windows\www\images\ui-icons_222222_256x240.png">
+      <PackagePath>www\images\ui-icons_222222_256x240.png</PackagePath>
+      <Modified>2016-06-07T19:54:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="H:\final\BlankCordovaApp3\platforms\windows\www\images\ui-icons_228ef1_256x240.png">
+      <PackagePath>www\images\ui-icons_228ef1_256x240.png</PackagePath>
+      <Modified>2016-06-07T19:54:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="H:\final\BlankCordovaApp3\platforms\windows\www\images\ui-icons_ef8c08_256x240.png">
+      <PackagePath>www\images\ui-icons_ef8c08_256x240.png</PackagePath>
+      <Modified>2016-06-07T19:54:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="H:\final\BlankCordovaApp3\platforms\windows\www\images\ui-icons_ffd27a_256x240.png">
+      <PackagePath>www\images\ui-icons_ffd27a_256x240.png</PackagePath>
+      <Modified>2016-06-07T19:54:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="H:\final\BlankCordovaApp3\platforms\windows\www\images\ui-icons_ffffff_256x240.png">
+      <PackagePath>www\images\ui-icons_ffffff_256x240.png</PackagePath>
+      <Modified>2016-06-07T19:54:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="H:\final\BlankCordovaApp3\platforms\windows\www\bootstrap\js\bootstrap.min.js">
+      <PackagePath>www\bootstrap\js\bootstrap.min.js</PackagePath>
+      <Modified>2016-06-07T19:54:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="H:\final\BlankCordovaApp3\platforms\windows\www\bootstrap\js\jquery.min.js">
+      <PackagePath>www\bootstrap\js\jquery.min.js</PackagePath>
+      <Modified>2016-06-07T19:54:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="H:\final\BlankCordovaApp3\platforms\windows\www\cordova-js-src\exec.js">
+      <PackagePath>www\cordova-js-src\exec.js</PackagePath>
+      <Modified>2016-06-07T19:54:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="H:\final\BlankCordovaApp3\platforms\windows\www\cordova-js-src\platform.js">
+      <PackagePath>www\cordova-js-src\platform.js</PackagePath>
+      <Modified>2016-06-07T19:54:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="H:\final\BlankCordovaApp3\platforms\windows\www\cordova.js">
+      <PackagePath>www\cordova.js</PackagePath>
+      <Modified>2016-06-07T19:54:38.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="H:\final\BlankCordovaApp3\platforms\windows\www\cordova_plugins.js">
+      <PackagePath>www\cordova_plugins.js</PackagePath>
+      <Modified>2016-06-07T19:54:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="H:\final\BlankCordovaApp3\platforms\windows\www\scripts\angular-file-saver.bundle.js">
+      <PackagePath>www\scripts\angular-file-saver.bundle.js</PackagePath>
+      <Modified>2016-06-07T19:54:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="H:\final\BlankCordovaApp3\platforms\windows\www\scripts\angular-mocks.js">
+      <PackagePath>www\scripts\angular-mocks.js</PackagePath>
+      <Modified>2016-06-07T19:54:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="H:\final\BlankCordovaApp3\platforms\windows\www\scripts\angular-route.js">
+      <PackagePath>www\scripts\angular-route.js</PackagePath>
+      <Modified>2016-06-07T19:54:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="H:\final\BlankCordovaApp3\platforms\windows\www\scripts\angular-route.min.js">
+      <PackagePath>www\scripts\angular-route.min.js</PackagePath>
+      <Modified>2016-06-07T19:54:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="H:\final\BlankCordovaApp3\platforms\windows\www\scripts\angular.intellisense.js">
+      <PackagePath>www\scripts\angular.intellisense.js</PackagePath>
+      <Modified>2016-06-07T19:54:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="H:\final\BlankCordovaApp3\platforms\windows\www\scripts\angular.js">
+      <PackagePath>www\scripts\angular.js</PackagePath>
+      <Modified>2016-06-07T19:54:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="H:\final\BlankCordovaApp3\platforms\windows\www\scripts\angular.min.js">
+      <PackagePath>www\scripts\angular.min.js</PackagePath>
+      <Modified>2016-06-07T19:54:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="H:\final\BlankCordovaApp3\platforms\windows\www\scripts\angulartics-debug.js">
+      <PackagePath>www\scripts\angulartics-debug.js</PackagePath>
+      <Modified>2016-06-07T19:54:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="H:\final\BlankCordovaApp3\platforms\windows\www\scripts\angulartics-debug.min.js">
+      <PackagePath>www\scripts\angulartics-debug.min.js</PackagePath>
+      <Modified>2016-06-07T19:54:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="H:\final\BlankCordovaApp3\platforms\windows\www\scripts\angulartics.js">
+      <PackagePath>www\scripts\angulartics.js</PackagePath>
+      <Modified>2016-06-07T19:54:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="H:\final\BlankCordovaApp3\platforms\windows\www\scripts\angulartics.min.js">
+      <PackagePath>www\scripts\angulartics.min.js</PackagePath>
+      <Modified>2016-06-07T19:54:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="H:\final\BlankCordovaApp3\platforms\windows\www\scripts\app.js">
+      <PackagePath>www\scripts\app.js</PackagePath>
+      <Modified>2016-06-07T19:54:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="H:\final\BlankCordovaApp3\platforms\windows\www\scripts\appBundle.js">
+      <PackagePath>www\scripts\appBundle.js</PackagePath>
+      <Modified>2016-06-07T19:54:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="H:\final\BlankCordovaApp3\platforms\windows\www\scripts\constant.js">
+      <PackagePath>www\scripts\constant.js</PackagePath>
+      <Modified>2016-06-07T19:54:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="H:\final\BlankCordovaApp3\platforms\windows\www\scripts\controller\ApplicationController.js">
+      <PackagePath>www\scripts\controller\ApplicationController.js</PackagePath>
+      <Modified>2016-06-07T19:54:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="H:\final\BlankCordovaApp3\platforms\windows\www\scripts\controller\controller.js">
+      <PackagePath>www\scripts\controller\controller.js</PackagePath>
+      <Modified>2016-06-07T19:54:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="H:\final\BlankCordovaApp3\platforms\windows\www\scripts\controller\followUpListCtrl.js">
+      <PackagePath>www\scripts\controller\followUpListCtrl.js</PackagePath>
+      <Modified>2016-06-07T19:54:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="H:\final\BlankCordovaApp3\platforms\windows\www\scripts\controller\HomeController.js">
+      <PackagePath>www\scripts\controller\HomeController.js</PackagePath>
+      <Modified>2016-06-07T19:54:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="H:\final\BlankCordovaApp3\platforms\windows\www\scripts\controller\newCaseFormCtrl.js">
+      <PackagePath>www\scripts\controller\newCaseFormCtrl.js</PackagePath>
+      <Modified>2016-06-07T19:54:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="H:\final\BlankCordovaApp3\platforms\windows\www\scripts\controller\newFollowUpCtrl.js">
+      <PackagePath>www\scripts\controller\newFollowUpCtrl.js</PackagePath>
+      <Modified>2016-06-07T19:54:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="H:\final\BlankCordovaApp3\platforms\windows\www\scripts\controller\PatientController.js">
+      <PackagePath>www\scripts\controller\PatientController.js</PackagePath>
+      <Modified>2016-06-07T19:54:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="H:\final\BlankCordovaApp3\platforms\windows\www\scripts\controller\patRegCtrl.js">
+      <PackagePath>www\scripts\controller\patRegCtrl.js</PackagePath>
+      <Modified>2016-06-07T19:54:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="H:\final\BlankCordovaApp3\platforms\windows\www\scripts\controller\viewCaseFormCtrl.js">
+      <PackagePath>www\scripts\controller\viewCaseFormCtrl.js</PackagePath>
+      <Modified>2016-06-07T19:54:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="H:\final\BlankCordovaApp3\platforms\windows\www\scripts\controller\viewFollowUpCtrl.js">
+      <PackagePath>www\scripts\controller\viewFollowUpCtrl.js</PackagePath>
+      <Modified>2016-06-07T19:54:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="H:\final\BlankCordovaApp3\platforms\windows\www\scripts\date.js">
+      <PackagePath>www\scripts\date.js</PackagePath>
+      <Modified>2016-06-07T19:54:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="H:\final\BlankCordovaApp3\platforms\windows\www\scripts\FileSaver.js">
+      <PackagePath>www\scripts\FileSaver.js</PackagePath>
+      <Modified>2016-06-07T19:54:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="H:\final\BlankCordovaApp3\platforms\windows\www\scripts\FileSaver.min.js">
+      <PackagePath>www\scripts\FileSaver.min.js</PackagePath>
+      <Modified>2016-06-07T19:54:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="H:\final\BlankCordovaApp3\platforms\windows\www\scripts\index.js">
+      <PackagePath>www\scripts\index.js</PackagePath>
+      <Modified>2016-06-07T19:54:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="H:\final\BlankCordovaApp3\platforms\windows\www\scripts\jquery-ui.js">
+      <PackagePath>www\scripts\jquery-ui.js</PackagePath>
+      <Modified>2016-06-07T19:54:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="H:\final\BlankCordovaApp3\platforms\windows\www\scripts\platformOverrides.js">
+      <PackagePath>www\scripts\platformOverrides.js</PackagePath>
+      <Modified>2016-06-07T19:54:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="H:\final\BlankCordovaApp3\platforms\windows\www\scripts\services\AuthService.js">
+      <PackagePath>www\scripts\services\AuthService.js</PackagePath>
+      <Modified>2016-06-07T19:54:38.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="H:\final\BlankCordovaApp3\platforms\windows\www\scripts\services\createCaseForm.js">
+      <PackagePath>www\scripts\services\createCaseForm.js</PackagePath>
+      <Modified>2016-06-07T19:54:38.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="H:\final\BlankCordovaApp3\platforms\windows\www\scripts\services\createFolUp.js">
+      <PackagePath>www\scripts\services\createFolUp.js</PackagePath>
+      <Modified>2016-06-07T19:54:38.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="H:\final\BlankCordovaApp3\platforms\windows\www\scripts\services\getCaseForm.js">
+      <PackagePath>www\scripts\services\getCaseForm.js</PackagePath>
+      <Modified>2016-06-07T19:54:38.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="H:\final\BlankCordovaApp3\platforms\windows\www\scripts\services\getFolUp.js">
+      <PackagePath>www\scripts\services\getFolUp.js</PackagePath>
+      <Modified>2016-06-07T19:54:38.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="H:\final\BlankCordovaApp3\platforms\windows\www\scripts\services\getFolUpList.js">
+      <PackagePath>www\scripts\services\getFolUpList.js</PackagePath>
+      <Modified>2016-06-07T19:54:38.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="H:\final\BlankCordovaApp3\platforms\windows\www\scripts\services\patientDetails.js">
+      <PackagePath>www\scripts\services\patientDetails.js</PackagePath>
+      <Modified>2016-06-07T19:54:38.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="H:\final\BlankCordovaApp3\platforms\windows\www\scripts\services\patientRegistration.js">
+      <PackagePath>www\scripts\services\patientRegistration.js</PackagePath>
+      <Modified>2016-06-07T19:54:38.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="H:\final\BlankCordovaApp3\platforms\windows\www\scripts\services\session.js">
+      <PackagePath>www\scripts\services\session.js</PackagePath>
+      <Modified>2016-06-07T19:54:38.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="H:\final\BlankCordovaApp3\platforms\windows\www\scripts\winstore-jscompat.js">
+      <PackagePath>www\scripts\winstore-jscompat.js</PackagePath>
+      <Modified>2016-06-07T19:54:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="H:\final\BlankCordovaApp3\platforms\windows\www\WinJS\js\base.js">
+      <PackagePath>www\WinJS\js\base.js</PackagePath>
+      <Modified>2016-06-07T19:54:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="H:\final\BlankCordovaApp3\platforms\windows\www\css\bootstrap.min.css">
+      <PackagePath>www\css\bootstrap.min.css</PackagePath>
+      <Modified>2016-06-07T19:54:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="H:\final\BlankCordovaApp3\platforms\windows\www\css\index.css">
+      <PackagePath>www\css\index.css</PackagePath>
+      <Modified>2016-06-07T19:54:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="H:\final\BlankCordovaApp3\platforms\windows\www\css\jquery-ui.css">
+      <PackagePath>www\css\jquery-ui.css</PackagePath>
+      <Modified>2016-06-07T19:54:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="H:\final\BlankCordovaApp3\platforms\windows\www\css\fonts\glyphicons-halflings-regular.eot">
+      <PackagePath>www\css\fonts\glyphicons-halflings-regular.eot</PackagePath>
+      <Modified>2016-06-07T19:54:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="H:\final\BlankCordovaApp3\platforms\windows\www\css\fonts\glyphicons-halflings-regular.svg">
+      <PackagePath>www\css\fonts\glyphicons-halflings-regular.svg</PackagePath>
+      <Modified>2016-06-07T19:54:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="H:\final\BlankCordovaApp3\platforms\windows\www\css\fonts\glyphicons-halflings-regular.ttf">
+      <PackagePath>www\css\fonts\glyphicons-halflings-regular.ttf</PackagePath>
+      <Modified>2016-06-07T19:54:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="H:\final\BlankCordovaApp3\platforms\windows\www\css\fonts\glyphicons-halflings-regular.woff">
+      <PackagePath>www\css\fonts\glyphicons-halflings-regular.woff</PackagePath>
+      <Modified>2016-06-07T19:54:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="H:\final\BlankCordovaApp3\platforms\windows\www\css\fonts\glyphicons-halflings-regular.woff2">
+      <PackagePath>www\css\fonts\glyphicons-halflings-regular.woff2</PackagePath>
+      <Modified>2016-06-07T19:54:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="H:\final\BlankCordovaApp3\platforms\windows\www\images\VkCOd11464969841.jpg">
+      <PackagePath>www\images\VkCOd11464969841.jpg</PackagePath>
+      <Modified>2016-06-07T19:54:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="H:\final\BlankCordovaApp3\platforms\windows\www\index.html">
+      <PackagePath>www\index.html</PackagePath>
+      <Modified>2016-06-07T19:54:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="H:\final\BlankCordovaApp3\platforms\windows\www\scripts\views\caseForm.html">
+      <PackagePath>www\scripts\views\caseForm.html</PackagePath>
+      <Modified>2016-06-07T19:54:38.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="H:\final\BlankCordovaApp3\platforms\windows\www\scripts\views\followUpdetails.html">
+      <PackagePath>www\scripts\views\followUpdetails.html</PackagePath>
+      <Modified>2016-06-07T19:54:38.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="H:\final\BlankCordovaApp3\platforms\windows\www\scripts\views\followUpList.html">
+      <PackagePath>www\scripts\views\followUpList.html</PackagePath>
+      <Modified>2016-06-07T19:54:38.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="H:\final\BlankCordovaApp3\platforms\windows\www\scripts\views\home.html">
+      <PackagePath>www\scripts\views\home.html</PackagePath>
+      <Modified>2016-06-07T19:54:38.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="H:\final\BlankCordovaApp3\platforms\windows\www\scripts\views\login.html">
+      <PackagePath>www\scripts\views\login.html</PackagePath>
+      <Modified>2016-06-07T19:54:38.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="H:\final\BlankCordovaApp3\platforms\windows\www\scripts\views\newFollowUp.html">
+      <PackagePath>www\scripts\views\newFollowUp.html</PackagePath>
+      <Modified>2016-06-07T19:54:38.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="H:\final\BlankCordovaApp3\platforms\windows\www\scripts\views\patientDetails.html">
+      <PackagePath>www\scripts\views\patientDetails.html</PackagePath>
+      <Modified>2016-06-07T19:54:38.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="H:\final\BlankCordovaApp3\platforms\windows\www\scripts\views\patientReg.html">
+      <PackagePath>www\scripts\views\patientReg.html</PackagePath>
+      <Modified>2016-06-07T19:54:38.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="H:\final\BlankCordovaApp3\platforms\windows\www\scripts\views\viewCaseForm.html">
+      <PackagePath>www\scripts\views\viewCaseForm.html</PackagePath>
+      <Modified>2016-06-07T19:54:38.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="H:\final\BlankCordovaApp3\platforms\windows\www\scripts\appBundle.js.map">
+      <PackagePath>www\scripts\appBundle.js.map</PackagePath>
+      <Modified>2016-06-07T19:54:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="H:\final\BlankCordovaApp3\platforms\windows\config.xml">
+      <PackagePath>config.xml</PackagePath>
+      <Modified>2016-06-07T19:54:30.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="H:\final\BlankCordovaApp3\platforms\windows\build\windows\debug\anycpu\win8.1\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2016-06-07T19:54:48.000</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.WinJS.2.0\1.0\">
+      <Name>Microsoft.WinJS.2.0</Name>
+      <Version>1.0.9600.17018</Version>
+      <Architecture>Neutral</Architecture>
+      <FrameworkIdentity>Name=Microsoft.WinJS.2.0, MinVersion=1.0.9600.17018</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.WinJS.2.0\1.0\Microsoft.WinJS.2.0.appx</AppxLocation>
+      <MoreInfo>http://go.microsoft.com/fwlink/%3fLinkId=260891</MoreInfo>
+    </ResolvedSDKReference>
+  </ItemGroup>
+</Project>

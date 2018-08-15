@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <style>
+    button {
+                background-color:black;
+                border: none;
+                color: white;
+                padding: 15px 20px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 2px 2px;
+                cursor: pointer;
+                border-radius: 8px;
+                width: 30%;
+        } 
+        .disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
+    }  
+    h1,h2,h3,h4 {
+            font-family: "Times New Roman", Times, serif;
+    }
+     </style>
+    <title></title>
+    
+</head>
+<body>
+    <div class="container" align="center">
+        <h1>New Follow Up:</h1>
+
+        <div ng-controller="newFollowUpCtrl" class="container-fluid" >
+            <form name="form" novalidate class="form-inline" role="form">
+
+                <table class="table">
+                    <tr>
+                        <td>Location:</td>
+                        <td>
+                            <select name="location" ng-model="data.location" class="form-control" required>
+                                <option value="nimhans">Nimhans</option>
+                                <option value="kolar">Kolar</option>
+                            </select>
+                            <div ng-show="form.location.$touched && form.location.$invalid">
+                                <div class="help-block" ng-show="form.location.$error.required">Please fill the field</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Frequency:</td>
+                        <td>
+                            <select name="frequency" ng-model="data.frequency" class="form-control" required>
+                                <option value="Increased">Increased</option>
+                                <option value="Decreased">Decreased</option>
+                            </select>
+                            <div ng-show="form.frequency.$touched && form.frequency.$invalid">
+                                <div class="help-block" ng-show="form.frequency.$error.required">Please fill the field</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Regularity of treatment:</td>
+                        <td>
+                            <input type="text" ng-model="data.regularity" name="regularity" class="form-control" placeholder="Regularity of treatment" required>
+                            <div ng-show="form.regularity.$touched && form.regularity.$invalid">
+                                <div class="help-block" ng-show="form.regularity.$error.required">Please fill the field</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Adverse Events:</td>
+                        <td>
+                            <textarea ng-model="data.adverseEvents" name="adverseEvents" class="form-control" placeholder="Adverse Events" required></textarea>
+                            <div ng-show="form.adverseEvents.$touched && form.adverseEvents.$invalid">
+                                <div class="help-block" ng-show="form.adverseEvents.$error.required">Please fill the field</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Other Remarks:</td>
+                        <td>
+                            <textarea ng-model="data.remarks" name="remarks" class="form-control" placeholder="Other Remarks" required></textarea>
+                            <div ng-show="form.remarks.$touched && form.remarks.$invalid">
+                                <div class="help-block" ng-show="form.remarks.$error.required">Please fill the field</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Next FU date:</td>
+                        <td>
+                            <input ui-date="dateOptions" ui-date-format="D, d MM, yy" ng-model="data.date" ng-change="changeDate()" class="form-control" />
+                                <span class="glyphicon glyphicon-calendar"></span>     
+                        </td>
+                    </tr>
+                </table>
+                <button type="button" ng-click="back()"><span class="glyphicon glyphicon-menu-left"></span>
+                    Back
+                </button>
+                <button type="submit" ng-click="submitForm(data)" ng-class="{'disabled': form.$invalid}" ng-disabled="!form.$valid"><span class="glyphicon glyphicon-check"></span>
+                    Submit
+                </button>
+
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <style>
+    button {
+                background-color:black;
+                border: none;
+                color: white;
+                padding: 15px 20px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 2px 2px;
+                cursor: pointer;
+                border-radius: 8px;
+                width: 30%;
+        } 
+    .disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
+    }
+    h1,h2,h3,h4 {
+            font-family: "Times New Roman", Times, serif;
+        }
+    </style>
+    <title>Patient Registration</title>
+</head>
+<body>
+    <div class="container" align="center">
+        <h3>New Patient Registration:</h3>
+
+        <div ng-controller="PatRegController" class="container-fluid" >
+            <form name="form" novalidate class="form-inline" role="form">
+                <table class="table" style="width:60%">
+                    <tr>
+                        <td>Name:</td>
+                        <td>
+                            <input type="text" ng-model="patient.name" name="name" class="form-control" placeholder="Name of Patient" required>
+                            <span ng-show="form.name.$dirty && form.name.$invalid">
+                                <span class="help-block" ng-show="form.name.$error.required">Name is required.</span>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Age:</td>
+                        <td>
+                            <input type="text" ng-model="patient.age" name="age" class="form-control" placeholder="Age of Patient (in years)" required>
+                            <span ng-show="form.age.$dirty && form.age.$invalid ">
+                                <span class="help-block" ng-show="form.age.$error.required">Age is required.</span>
+                            </span>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>Sex:</td>
+                        <td>
+                            <select name="sex" ng-model="patient.sex" required class="form-control">
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                            </select>
+                            <span ng-show="form.sex.$dirty && form.sex.$invalid">
+                                <span class="help-block" ng-show="form.sex.$error.required">Input is required.</span>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Si No:</td>
+                        <td>
+                            <input type="text" ng-model="patient.siNo" name="siNo" class="form-control" required placeholder="Si no">
+                            <span ng-show="form.siNo.$dirty && form.siNo.$invalid">
+                                <span class="help-block" ng-show="form.siNo.$error.required">SiNo is required.</span>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Father's Name:</td>
+                        <td>
+                            <input type="text" ng-model="patient.fatherName" name="fatherName" class="form-control" required placeholder="Name of Father">
+                            <span ng-show="form.fatherName.$dirty && form.fatherName.$invalid">
+                                <span class="help-block" ng-show="form.fatherName.$error.required">Father's Name is required.</span>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Village's Name:</td>
+                        <td>
+                            <input type="text" ng-model="patient.village" name="village" class="form-control" required placeholder="Name of Village">
+                            <span ng-show="form.village.$dirty && form.village.$invalid">
+                                <span class="help-block" ng-show="form.village.$error.required">Village's Name is required.</span>
+                            </span>
+                        </td>
+                    </tr>
+
+                </table>
+
+                <button type="submit" ng-model="submit" ng-click="submitForm(patient)" form="form" ng-class="{'disabled': form.$invalid}" ng-disabled="form.$invalid">
+                    <span class="glyphicon glyphicon-check"></span>
+                    Submit
+                </button>
+
+            </form>
+            <br />
+
+            <div class="alert alert-info" ng-show="showMe">
+                {{alert}}
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

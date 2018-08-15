@@ -1,0 +1,233 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        button {
+                background-color:black;
+                border: none;
+                color: white;
+                padding: 15px 20px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 2px 2px;
+                cursor: pointer;
+                border-radius: 8px;
+                width: 30%;
+        } 
+        h1,h2,h3,h4 {
+            font-family: "Times New Roman", Times, serif;
+        }
+        /*input[type="file"] {
+        display: block !important;
+        width: 100% !important;
+        height: 100% !important;
+        opacity: 0 !important;
+        overflow: hidden !important;
+        z-index: 100 !important;
+        margin-top: -20px;
+        padding-top: -20px;
+        top: -20px;
+    }*/
+    </style>
+    <title>caseForm</title>
+</head>
+<body>
+    <div class="container" align="center">
+        <h1>Case Form:</h1>
+        <div ng-controller="newCaseFormCtrl" class="container-fluid" >
+            <form name="form" novalidate class="form-inline" role="form" enctype="multipart/form-data">
+                <table class="table">
+                    <tr>
+                        <td>Location: </td>
+                        <td>
+                            <select name="location" ng-model="data.location" required="" class="form-control">
+                                <option value="Nimhans">Nimhans</option>
+                                <option value="Kolar">Kolar</option>
+                            </select>
+                            <div ng-show="form.location.$dirty && form.location.$invalid">
+                                <div class="help-block" ng-show="form.location.$error.required">Field is required.</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Age at onset: </td>
+                        <td>
+                            <select ng-model="data.ageAtOnset" name="ageAtOnset" ng-options="age.name for age in onsetAges" required="" class="form-control"></select>
+                            <div ng-show="form.ageAtOnset.$dirty && form.ageAtOnset.$invalid">
+                                <div class="help-block" ng-show="form.ageAtOnset.$error.required">Field is required.</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Types Of Seizures:</td>
+                        <td>
+                            <select ng-model="data.typeOfSeizures" name="typeOfSeizures" ng-options="type.name for type in seizureTypes" required="" class="form-control"></select>
+                            <div ng-show="form.typeOfSeizures.$dirty && form.typeOfSeizures.$invalid">
+                                <div class="help-block" ng-show="form.typeOfSeizures.$error.required">Field is required.</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <select ng-model="data.subTypeOfSeizures" name="subTypeOfSeizures" ng-options="sub.name for sub in data.typeOfSeizures.sub" required="" class="form-control"></select>
+                            <div ng-show="form.subTypeOfSeizures.$dirty && form.subTypeOfSeizures.$invalid">
+                                <div class="help-block" ng-show="form.subTypeOfSeizures.$error.required">Field is required.</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Duration of Seizures</td>
+                        <td>
+                            <select ng-model="data.durationOfSeizures" name="durationOfSeizures" ng-options="type.name for type in seizureDurations" required="" class="form-control"></select>
+                            <div ng-show="form.durationOfSeizures.$dirty && form.durationOfSeizures.$invalid">
+                                <div class="help-block" ng-show="form.durationOfSeizures.$error.required">Field is required.</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> Frequency of seizures before treatment:</td>
+                        <td>
+                            <select ng-model="data.focBeforeTreatment" name="focBeforeTreatment" ng-options="type.name for type in beforeFrequencies" required="" class="form-control"></select>
+                            <div ng-show="form.focBeforeTreatment.$dirty && form.focBeforeTreatment.$invalid">
+                                <div class="help-block" ng-show="form.focBeforeTreatment.$error.required">Field is required.</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> Frequency of seizures with treatment:</td>
+                        <td>
+                            <select ng-model="data.focWithTreatment" name="focWithTreatment" ng-options="type.name for type in afterFrequencies" required="" class="form-control"></select>
+                            <div ng-show="form.focWithTreatment.$dirty && form.focWithTreatment.$invalid">
+                                <div class="help-block" ng-show="form.focWithTreatment.$error.required">Field is required.</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Cluster attacks:</td>
+                        <td>
+                            <select ng-model="data.clusterAttacks" name="clusterAttacks" ng-options="type.name for type in attacks" required="" class="form-control"></select>
+                            <div ng-show="form.clusterAttackst.$dirty && form.clusterAttacks.$invalid">
+                                <div class="help-block" ng-show="form.clusterAttacks.$error.required">Field is required.</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Status epilepticus:</td>
+                        <td>
+                            <select ng-model="data.statusEpilepticus" name="statusEpilepticus" ng-options="type.name for type in epilepticus" required="" class="form-control"></select>
+                            <div ng-show="form.statusEpilepticus.$dirty && form.statusEpilepticus.$invalid">
+                                <div class="help-block" ng-show="form.statusEpilepticus.$error.required">Field is required.</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Precipitating Factors:</td>
+                        <td>
+                            <div class="panel">
+                                <div ng-repeat="type in pFactors">
+                                    <input type="checkbox" name="precipitatingFactors" ng-checked="selection1.indexOf(type.name) > -1" ng-click="select1(type.name)">
+                                    <label>{{type.name}}</label>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Past History:</td>
+                        <td>
+                            <select ng-model="data.pastHistory" name="pastHistory" ng-options="type.name for type in pHistories" required="" class="form-control"></select>
+                            <div ng-show="form.pastHistory.$dirty && form.pastHistory.$invalid">
+                                <div class="help-block" ng-show="form.pastHistory.$error.required">Field is required.</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Family History:</td>
+                        <td>
+                            <div class="panel">
+                                <div ng-repeat="type in fHistories">
+                                    <input type="checkbox" name="familyHistory" ng-checked="selection2.indexOf(type.name) > -1" ng-click="select2(type.name)">
+                                    <label>{{type.name}}</label>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Probable Aetiological Factors:</td>
+                        <td>
+                            <select ng-model="data.probableAF" name="probableAF" ng-options="type.name for type in aeteologicalFactors" required="" class="form-control"></select>
+                            <div ng-show="form.probableAF.$dirty && form.probableAF.$invalid">
+                                <div class="help-block" ng-show="form.probableAF.$error.required">Field is required.</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Personality and Mental Status:</td>
+                        <td>
+                            <select ng-model="data.pms" name="pms" ng-options="type.name for type in pmstatus" required="" class="form-control"></select>
+                            <div ng-show="form.pms.$dirty && form.pms.$invalid">
+                                <div class="help-block" ng-show="form.pms.$error.required">Field is required.</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Description of clinical seizures:</td>
+                        <td>
+                            <textarea ng-model="data.desOfClinicalSeizures" name="desOfClinicalSeizures" class="form-control" required></textarea>
+                            <div ng-show="form.desOfClinicalSeizures.$dirty && form.desOfClinicalSeizures.$invalid">
+                                <div class="help-block" ng-show="form.desOfClinicalSeizures.$error.required">Field is required.</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Previous Treatment:</td>
+                        <td>
+                            <select ng-model="data.prevTreatment" name="prevTreatment" ng-options="type.name for type in ptreatments" required="" class="form-control"></select>
+                            <div ng-show="form.prevTreatment.$dirty && form.prevTreatment.$invalid">
+                                <div class="help-block" ng-show="form.prevTreatment.$error.required">Field is required.</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>General Intelligence:</td>
+                        <td>
+                            <select ng-model="data.gi" name="gi" ng-options="type.name for type in intelligence" required="" class="form-control"></select>
+                            <div ng-show="form.gi.$dirty && form.gi.$invalid">
+                                <div class="help-block" ng-show="form.gi.$error.required">Field is required.</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Neurological Examinations:</td>
+                        <td>
+                            <select ng-model="data.ne" name="ne" ng-options="type.name for type in examination" required="" class="form-control"></select>
+                            <div ng-show="form.ne.$dirty && form.ne.$invalid">
+                                <div class="help-block" ng-show="form.ne.$error.required">Field is required.</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Treatment Advised:</td>
+                        <td>
+                            <textarea ng-model="data.treatmentAdvised" name="treatmentAdvised" class="form-control" required></textarea>
+                            <div ng-show="form.treatmentAdvised.$dirty && form.treatmentAdvised.$invalid">
+                                <div class="help-block" ng-show="form.treatmentAdvised.$error.required">Field is required.</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Video</td>
+                        <td>><input type="file" file-model="myFile" name="myFile" /></td>
+                    </tr>
+                </table>
+                <button type="submit"  ng-model="submit" ng-click="submitForm(data)" ng-disabled="form.$invalid">
+                    <span class="glyphicon glyphicon-check"></span>
+                        Submit
+                </button>
+            </form>
+
+        </div>
+    </div>
+</body>
+</html>

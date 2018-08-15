@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <!--
+        Customize the content security policy in the meta tag below as needed. Add 'unsafe-inline' to default-src to enable inline JavaScript.
+        For details, see http://go.microsoft.com/fwlink/?LinkID=617521
+    -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com http://maxcdn.bootstrapcdn.com https://ajax.googleapis.com 'unsafe-eval'; style-src 'self' 'unsafe-inline' http://maxcdn.bootstrapcdn.com https://ajax.googleapis.com ; media-src *">
+
+    <!--<meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline' 'unsafe-eval'; script-src 'self' 'unsafe-inline' 'unsafe-eval'">
+        -->
+
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <!-- <link rel="stylesheet"
+           href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>-->
+
+    
+    
+
+    <!-- BlankCordovaApp3 references -->
+
+    <link href="css/index.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/jquery-ui.css" rel="stylesheet"/>
+    <script type="text/javascript" src="scripts/winstore-jscompat.js"></script>
+   
+
+    <!--      <link href="css/bootstrap.css" rel="stylesheet"/>-->
+
+    <style>
+        .container-fluid {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    </style>
+    <title>E-Registry for Epilepsy</title>
+</head>
+<body ng-app="PatRegApp" ng-controller="ApplicationController">
+    <nav class="navbar navbar-inverse" ng-hide="nav">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <label class="navbar-brand">ERegistry</label>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><button ng-click="home()" ng-hide="home_bool" class="btn btn-link"><span class="glyphicon glyphicon-home"></span> Home</button></li>
+                    <li><button ng-click="logout()" class="btn btn-link"><span class="glyphicon glyphicon-log-out"></span> Logout</button></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br />
+    <div ng-view></div>
+
+  
+    <!-- Cordova reference, this is added to your app when it's built. -->
+    <script src="bootstrap/js/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+  
+    <script src="cordova.js"></script>
+    <script src="scripts/platformOverrides.js"></script>
+    <script src="scripts/appBundle.js"></script>
+    <script src="scripts/jquery-ui.js"></script>
+    <script src="scripts/angular.js"></script>
+    <script src="scripts/date.js"></script>
+    <script src="scripts/angular.min.js"></script>
+    <script src="scripts/angular-route.js"></script>
+    <script src="scripts/app.js"></script>
+
+    <!---   Controllers -->
+    <script src="scripts/controller/controller.js"></script>
+    <script src="scripts/controller/ApplicationController.js"></script>
+    <script src="scripts/controller/viewCaseFormCtrl.js"></script>
+    <script src="scripts/controller/HomeController.js"></script>
+    <script src="scripts/controller/PatientController.js"></script>
+    <script src="scripts/controller/newCaseFormCtrl.js"></script>
+    <script src="scripts/controller/followUpListCtrl.js"></script>
+    <script src="scripts/controller/newFollowUpCtrl.js"></script>
+    <script src="scripts/controller/viewFollowUpCtrl.js"></script>
+    <script src="scripts/controller/patRegCtrl.js"></script>
+    <script src="scripts/constant.js"></script>
+
+    <!--     Services   -->
+    <script src="scripts/services/AuthService.js"></script>
+    <script src="scripts/services/session.js"></script>
+    <script src="scripts/services/patientDetails.js"></script>
+    <script src="scripts/services/createCaseForm.js"></script>
+    <script src="scripts/services/getFolUpList.js"></script>
+    <script src="scripts/services/getCaseForm.js"></script>
+    <script src="scripts/services/createFolUp.js"></script>
+    <script src="scripts/services/getFolUp.js"></script>
+    <script src="scripts/services/patientRegistration.js"></script>
+
+    <script type="text/javascript" src="scripts/angular-file-saver.bundle.js"></script>
+</body>
+</html>

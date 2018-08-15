@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <style>
+    tr:nth-child(even){background-color: #f2f2f2}
+    button {
+                background-color:black;
+                border: none;
+                color: white;
+                padding: 15px 20px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 2px 2px;
+                cursor: pointer;
+                border-radius: 8px;
+                width: 30%;
+        }  
+    h1,h2,h3,p {
+            font-family: "Times New Roman", Times, serif;
+        }  
+    </style>
+    <title>FollowUp List</title>
+</head>
+<body>
+    <div class="container" ng-controller="followUpListCtrl" align="center">
+        <h1>Follow Up Details</h1>
+        <h3>of past visits...</h3>
+        <div class="container-fluid">
+            <table class="table">
+                <tr>
+                    <th>Date</th>
+                    <th>Location</th>
+                    <th></th>
+                </tr>
+                <tr ng-repeat="followUp in List">
+                    <td>{{followUp.date | date}}</td>
+                    <td>{{followUp.location}}</td>
+                    <td><button  type="submit" class="btn btn-link" ng-click="view()">View</button></td>
+                </tr>
+            </table>
+        </div>
+        <button type="submit"  ng-click="back()"><span class="glyphicon glyphicon-menu-left"></span> Back</button>
+        <button type="submit"  ng-click="newFollowUp()"><span class="glyphicon glyphicon-plus-sign"></span> Add New</button>
+    </div>
+
+</body>
+</html>

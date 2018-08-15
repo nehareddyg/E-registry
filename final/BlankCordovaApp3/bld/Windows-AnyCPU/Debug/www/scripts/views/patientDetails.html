@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Patient's Detail</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        tr:nth-child(even){background-color: #f2f2f2}
+        h1,h2,h3,p {
+            font-family: "Times New Roman", Times, serif;
+        }
+    </style>
+</head>
+<body  ng-cloak>
+    <div class="container">
+        <h1>Patient's Demographic Details:</h1>
+        <div ng-controller="PatientController" class="container-fluid" align="center">
+            <form name="form" novalidate class="form-inline" role="form">
+                <table class="table" style="width:60%; text-align:center">
+
+                    <tr>
+                        <th>Name:</th>
+                        <td>{{patient.name}}</td>
+                    </tr>
+                    <tr>
+                        <th>Age:</th>
+                        <td>{{patient.age}}</td>
+                    </tr>
+                    <tr>
+                        <th>Sex:</th>
+                        <td>{{patient.sex}}</td>
+                    </tr>
+                    <tr>
+                        <th>Father's Name:</th>
+                        <td>{{patient.fatherName}}</td>
+                    </tr>
+                    <tr>
+                        <th>Village:</th>
+                        <td>{{patient.village}}</td>
+                    </tr>
+                    <tr>
+                        <th>Si No:</th>
+                        <td>{{patient.siNo}}</td>
+                    </tr>
+                </table>
+            </form>
+            <br />
+            <br />
+            <div class="container-fluid text-center">
+                <div class="row">
+                    <h3>Direct to:</h3>
+                    <br />
+                    <div class="col-sm-4">
+                        <input type="image" src="../../images/cf.png" ng-click="caseForm()">
+                        <h4><b>Case Form</b></h4>
+                        <p>Fill/View Diagonostic Details..</p>
+
+                    </div>
+                    <div class="col-sm-4">
+                        <input type="image" src="../../images/fu.png" ng-click="followUp()">
+                        <h4><b>Follow Ups</b></h4>
+                        <p>Track Past Visits..</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <input type="image" src="../../images/pr.png" ng-click="prescription()">
+                        <h4><b>Prescription Details</b></h4>
+                        <p>Prescribed Medication Details..</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

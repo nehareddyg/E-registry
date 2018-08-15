@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            text-align: center;
+        }
+        tr:nth-child(even){background-color: #f2f2f2}
+        h1,h2,h3,p {
+            font-family: "Times New Roman", Times, serif;
+        }
+        button {
+                background-color:black;
+                border: none;
+                color: white;
+                padding: 15px 20px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 2px 2px;
+                cursor: pointer;
+                border-radius: 8px;
+                width: 30%;
+        }    
+    </style>
+    <title>followUpDetails</title>
+</head>
+<body>
+    <div class="container" ng-controller="viewFollowUpCtrl" align="center">
+        <h1>Follow Up Report </h1>
+        <h3>by {{name}} dated {{date | date}}</h3>
+        <div class="container-fluid">
+            <form name="form" novalidate class="form-inline" role="form">
+                <table class="table">
+                    <tr>
+                        <th>Location: </th>
+                        <td>{{location}}</td>
+                    </tr>
+                    <tr>
+                        <th>Frequency: </th>
+                        <td>{{data.frequency}}</td>
+                    </tr>
+                    <tr>
+                        <th>Regularity of treatment: </th>
+                        <td>{{data.regularity}}</td>
+                    </tr>
+                    <tr>
+                        <th>Adverse Events:</th>
+                        <td>{{data.adverseEvents}}</td>
+                    </tr>
+                    <tr>
+                        <th>Other remarks: </th>
+                        <td>{{data.remarks}}</td>
+                    </tr>
+                    <tr>
+                        <th>Next FU date: </th>
+                        <td>{{data.nextDate}}</td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <button type="button" ng-click="back()"><span class="glyphicon glyphicon-menu-left"></span> 
+            Back
+        </button>
+    </div>
+</body>
+</html>

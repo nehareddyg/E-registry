@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        tr:nth-child(even){background-color: #f2f2f2}
+        h1,h2,h3,p {
+            font-family: "Times New Roman", Times, serif;
+        }
+        button {
+                background-color:black;
+                border: none;
+                color: white;
+                padding: 15px 20px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 2px 2px;
+                cursor: pointer;
+                border-radius: 8px;
+                width: 30%;
+        }
+    </style>
+    <title>View Case Form</title>
+</head>
+<body ng-cloak>
+    <div class="container" align="center">
+        <h1>Case Form:</h1>
+        <div ng-controller="viewCaseFormCtrl" class="container-fluid" align="center">
+            <form name="form" novalidate class="form-inline" role="form">
+                <table class="table">
+                    <tr>
+                        <th>Location: </th>
+                        <td>{{location}}</td>
+                    </tr>
+                    <tr>
+                        <th>Age at onset: </th>
+                        <td>{{data.ageAtOnset}}</td>
+                    </tr>
+                    <tr>
+                        <th>Type of seizures: </th>
+                        <td>{{data.typesOfSeizures}}</td>
+                    </tr>
+                    <tr>
+                        <th>Subtype of seizures: </th>
+                        <td>{{data.subtypesOfSeizures}}</td>
+                    </tr>
+                    <tr>
+                        <th>Duration of seizures: </th>
+                        <td>{{data.durationOfSeizures}}</td>
+                    </tr>
+                    <tr>
+                        <th>Frequency of seizures before treatment: </th>
+                        <td>{{data.frequencyOfSeizuresBeforeTreatment}}</td>
+                    </tr>
+                    <tr>
+                        <th>Frequency of seizures with treatment: </th>
+                        <td>{{data.frequencyOfSeizuresWithTreatment}}</td>
+                    </tr>
+                    <tr>
+                        <th>Cluster Attacks: </th>
+                        <td>{{data.clusterAttacks}}</td>
+                    </tr>
+                    <tr>
+                        <th>Status epilepticus: </th>
+                        <td>{{data.statusEpilepticus}}</td>
+                    </tr>
+                    <tr>
+                        <th>Precipitating factors: </th>
+                        <td><ul ng-repeat="type in selection1"><li>{{type}}</li></ul></td>
+                    </tr>
+                    <tr>
+                        <th>Past History: </th>
+                        <td>{{data.pastHistory}}</td>
+                    </tr>
+                    <tr>
+                        <th>Family History: </th>
+                        <td><ul ng-repeat="type in selection2"><li>{{type}}</li></ul></td>
+                    </tr>
+                    <tr>
+                        <th>Probable aetiological factors: </th>
+                        <td>{{data.probableAetiologicalFactors}}</td>
+                    </tr>
+                    <tr>
+                        <th>Personality and mental status: </th>
+                        <td>{{data.personalityAndMentalStatus}}</td>
+                    </tr>
+                    <tr>
+                        <th>Description of clinical seizures: </th>
+                        <td>{{data.descriptionOfClinicalSeizures}}</td>
+                    </tr>
+                    <tr>
+                        <th>Previous Treatment: </th>
+                        <td>{{data.previousTreatment}}</td>
+                    </tr>
+                    <tr>
+                        <th>General Intelligence: </th>
+                        <td>{{data.generalIntelligence}}</td>
+                    </tr>
+                    <tr>
+                        <th>Neurological Intelligence: </th>
+                        <td>{{data.neurologicalExamination}}</td>
+                    </tr>
+                    <tr>
+                        <th>Treatment advised: </th>
+                        <td>{{data.treatmentAdvised}}</td>
+                    </tr>
+                    <tr>
+                        <th>Download Video: </th>
+                        <td><a download="content.txt" ng-href="{{ url }}">Download</a></td>
+                    </tr>
+                </table>
+            </form>
+            <br />
+            <button style="height: 50px" type="button" ng-click="back()"><span class="glyphicon glyphicon-menu-left"></span> Back</button>
+        </div>
+    </div>
+</body>
+</html>
